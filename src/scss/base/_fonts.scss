@@ -1,4 +1,6 @@
 @use '../mixins/font';
 
-// Example
-// @include font.fontsWoff2('Montserrat', 'Montserrat-Regular', 400);
+@include font.fontsWoff2('ReadexPro', 'ReadexPro-Regular', 400);
+@include font.fontsWoff2('ReadexPro', 'ReadexPro-Medium', 500);
+@include font.fontsWoff2('ReadexPro', 'ReadexPro-SemiBold', 600);
+@include font.fontsWoff2('ReadexPro', 'ReadexPro-Bold', 700);
