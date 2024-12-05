@@ -1,11 +1,24 @@
 :root {
   // Fonts
-  --font-primary: 'Arial';
+  --font-primary: 'ReadexPro';
+  --font-size-text: 18px;
 
   // Base colors
   --color-dark: #000;
   --color-light: #fff;
 
+  // Page colors
+  --color-accent: #ffcb45;
+
+  // Text colors
+  --tc-primary: #1d1d1d;
+  --tc-secondary: rgba(29, 29, 29, 0.7);
+
   // Background colors
   --bgc-primary: #fff;
+
+  // Box-shadow
+  --box-shadow-social: 0 4px 12px 0 rgba(29, 29, 29, 0.15);
+  --box-shadow-card: 2px 5px 12px 0 rgba(0, 0, 0, 0.15);
+  --box-shadow-image: 4px 4px 20px 0 rgba(0, 0, 0, 0.25);
 }
