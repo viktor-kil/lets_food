@@ -1,0 +1,8 @@
+//- Предзагрузка шрифта
+mixin fontPreload(fullName)
+  link(rel="preload" href=`fonts/${fullName}.woff2` as="font" type="font/woff2" crossorigin)
+
+//- Вставка svg с спрайта
+mixin svgUse(className, idIcon, width, height)
+  svg(class=className width=width height=height aria-hidden="true")
+    use(xlink:href=`images/sprite.svg${idIcon}`)
