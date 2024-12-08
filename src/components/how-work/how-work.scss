@@ -1,0 +1,71 @@
+.how-work {
+  padding-block: 80px 40px;
+
+  &__head {
+    margin-bottom: 32px;
+    max-width: 612px;
+    margin-inline: auto;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  &__item {
+    padding-top: 204px;
+    text-align: center;
+    background-position: center top;
+    background-size: 180px auto;
+    background-repeat: no-repeat;
+
+    &--order {
+      background-image: url('../images/how-work/order.png');
+      background-image: image-set(
+        url('../images/how-work/order.avif') type('image/avif') 1x,
+        url('../images/how-work/order@2x.avif') type('image/avif') 2x,
+        url('../images/how-work/order.webp') type('image/webp') 1x,
+        url('../images/how-work/order@2x.webp') type('image/webp') 2x,
+        url('../images/how-work/order.png') 1x,
+        url('../images/how-work/order@2x.png') 2x
+      );
+    }
+
+    &--delivery {
+      background-image: url('../images/how-work/delivery.png');
+      background-image: image-set(
+        url('../images/how-work/delivery.avif') type('image/avif') 1x,
+        url('../images/how-work/delivery@2x.avif') type('image/avif') 2x,
+        url('../images/how-work/delivery.webp') type('image/webp') 1x,
+        url('../images/how-work/delivery@2x.webp') type('image/webp') 2x,
+        url('../images/how-work/delivery.png') 1x,
+        url('../images/how-work/delivery@2x.png') 2x
+      );
+    }
+
+    &--quality {
+      background-image: url('../images/how-work/courier.png');
+      background-image: image-set(
+        url('../images/how-work/courier.avif') type('image/avif') 1x,
+        url('../images/how-work/courier@2x.avif') type('image/avif') 2x,
+        url('../images/how-work/courier.webp') type('image/webp') 1x,
+        url('../images/how-work/courier@2x.webp') type('image/webp') 2x,
+        url('../images/how-work/courier.png') 1x,
+        url('../images/how-work/courier@2x.png') 2x
+      );
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 28px;
+  }
+
+  &__description {
+    margin-bottom: 0;
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--tc-secondary);
+  }
+}

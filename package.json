@@ -53,6 +53,7 @@
     "webpack-stream": "^7.0.0"
   },
   "dependencies": {
+    "@a1rth/css-normalize": "^1.1.8",
     "modern-normalize": "^3.0.1"
   }
 }

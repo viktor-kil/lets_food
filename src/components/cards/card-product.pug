@@ -1,0 +1,17 @@
+mixin cardProduct(name, description, price, imageName)
+  article.card-product
+    .card-product__image-box
+      picture.card-product__image
+        source(srcset=`images/products/${imageName}.avif 1x, images/products/${imageName}@2x.avif 2x` type=`image/avif`)
+        source(srcset=`images/products/${imageName}.webp 1x, images/products/${imageName}@2x.webp 2x` type=`image/webp`)
+        img(src=`images/products/${imageName}.png` srcset=`images/products/${imageName}@2x.png 2x` alt="")
+    .card-product__content
+      .card-product__info
+        h3.card-product__title= name
+        p.card-product__description= description
+      .card-product__footer
+        span.card-product__price= `$ ${price}`
+        button.card-product__favorite(type="button" aria-label="Add to favorites")
+          svg.card-product__favorite-icon(width='22' height='20' viewbox='0 0 23 20' fill='none' xmlns='http://www.w3.org/2000/svg')
+            path(d='M11.9646 3.12862C8.29142 -2.54509 0.85714 0.545766 0.85714 6.72634C0.85714 11.3675 11.0491 18.6275 11.9646 19.5715C12.8863 18.6275 22.5714 11.3675 22.5714 6.72634C22.5714 0.592623 15.6446 -2.54509 11.9646 3.12862Z')
+

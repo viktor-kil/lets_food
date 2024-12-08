@@ -1,0 +1,24 @@
+.header {
+  background-color: var(--bgc-secondary);
+  padding-block: 34px;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__user-actions,
+  &__action-icons {
+    display: flex;
+    align-items: center;
+  }
+
+  &__user-actions {
+    gap: 28px;
+  }
+
+  &__action-icons {
+    gap: 32px;
+  }
+}

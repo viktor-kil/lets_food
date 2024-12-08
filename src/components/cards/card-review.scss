@@ -1,0 +1,38 @@
+.card-review {
+  border-radius: 10px;
+  padding: 28px 20px;
+  background-color: #f1f1f1;
+
+  &__head {
+    display: flex;
+    column-gap: 18px;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  &__avatar {
+    display: block;
+    overflow: hidden;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__customers-name {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--tc-secondary);
+  }
+}

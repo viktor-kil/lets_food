@@ -1,0 +1,32 @@
+.slider {
+  &__track {
+    display: flex;
+    column-gap: 24px;
+  }
+
+  &__slide {
+    flex: 0 0 452px;
+  }
+
+  &__pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    gap: 14px;
+  }
+
+  &__dot {
+    flex-grow: 0;
+    flex-shrink: 1;
+    border: none;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    background-color: #fff9ea;
+    cursor: pointer;
+
+    &--active {
+      background-color: #ffcb45;
+    }
+  }
+}

@@ -1,0 +1,65 @@
+.hero {
+  min-height: 600px;
+  background-image: url('../images/shapes/wavy-line.svg'),
+    url('../images/shapes/wavy-line.svg');
+  background-position: left 0 bottom 36px, left 0 bottom 73px;
+  background-size: 179px 37px;
+  background-repeat: no-repeat;
+  background-color: var(--bgc-secondary);
+
+  &__container {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 530px 560px;
+  }
+
+  &__content {
+    align-self: center;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 1.2;
+
+    span {
+      color: var(--color-accent);
+    }
+  }
+
+  &__description {
+    margin-bottom: 22px;
+  }
+
+  &__images {
+    position: relative;
+    height: 589px;
+    background-image: url('../images/shapes/ellipse.svg'),
+      url('../images/shapes/ellipse.svg'), url('../images/shapes/ellipse.svg'),
+      url('../images/shapes/ellipse.svg');
+    background-position: left 76px top 52px, left 120px top 250px,
+      right 0 top 250px, left 0 bottom 97px;
+    background-size: 54px, 19px, 74px, 41px;
+    background-repeat: no-repeat;
+  }
+
+  &__image {
+    position: absolute;
+
+    &--big {
+      right: 53px;
+      top: 12px;
+    }
+
+    &--medium {
+      right: -16px;
+      bottom: 0;
+    }
+
+    &--small {
+      left: 76px;
+      bottom: 97px;
+    }
+  }
+}

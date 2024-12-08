@@ -1,0 +1,14 @@
+.card-review
+  .card-review__head
+    picture.card-review__avatar
+      source(srcset="images/customers/1.avif 1x, images/customers/1@2x.avif 2x" type="image/avif")
+      source(srcset="images/customers/1.webp 1x, images/customers/1@2x.webp 2x" type="image/webp")
+      img(src="images/customers/1.jpg" srcset="images/customers/1@2x.jpg 2x" alt="")
+    .card-review__meta
+      .card-review__customers-name Naura Silvana
+      .card-review__rating
+        include ../star-rating/star-rating
+  .card-review__text
+    p.
+      “Lorem ipsum dolor sit amet, consectetur adipiscing
+      elit ut aliquam, purus sit amet luctus venenatis.”

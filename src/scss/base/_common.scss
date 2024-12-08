@@ -1,6 +1,7 @@
 .page {
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
   height: 100vh;
   font-family: var(--font-primary), sans-serif;
   font-weight: 400;

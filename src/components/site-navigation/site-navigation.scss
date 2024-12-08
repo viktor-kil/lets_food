@@ -1,0 +1,34 @@
+.site-navigation {
+  &__list {
+    display: flex;
+    column-gap: 36px;
+    align-items: center;
+  }
+
+  &__link {
+    position: relative;
+    font-weight: 500;
+    font-size: 22px;
+    text-decoration: none;
+    color: var(--tc-secondary);
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -6px;
+      border-radius: 4px;
+      width: 100%;
+      height: 3px;
+      background-color: transparent;
+    }
+
+    &--current {
+      color: var(--tc-primary);
+
+      &::after {
+        background-color: var(--color-accent);
+      }
+    }
+  }
+}

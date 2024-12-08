@@ -1,0 +1,25 @@
+include ../../data/menu
+include ../cards/card-product
+
+section.menu
+  .container.menu__container
+    .menu__head
+      +sectionHead(
+        "Our menu",
+        "Our Popular Menu",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam",
+      )
+
+    ul.menu__list
+      each product in menu
+        li.menu__item
+          +cardProduct(
+            product.name,
+            product.description,
+            product.price,
+            product.image
+          )
+
+
+    .menu__action
+      button.button.button--primary(type="button") More Menu

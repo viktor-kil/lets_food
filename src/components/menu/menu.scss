@@ -1,0 +1,26 @@
+.menu {
+  padding-block: 20px 26px;
+
+  &__container {
+    max-width: calc(1192px + 30px);
+  }
+
+  &__head {
+    margin-bottom: 32px;
+    max-width: 580px;
+    margin-inline: auto;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 280px);
+    margin-bottom: 70px;
+    gap: 24px;
+  }
+
+  &__action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

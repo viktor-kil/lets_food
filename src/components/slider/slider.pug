@@ -1,0 +1,9 @@
+.slider
+  ul.slider__track
+    - for (let i = 1; i <= 3; i++)
+      li.slider__slide
+        include ../cards/card-review
+  .slider__pagination
+    .slider__dot.slider__dot--active
+    .slider__dot
+    .slider__dot

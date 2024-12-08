@@ -1,3 +1,5 @@
+include ../components/section-head/section-head
+
 doctype html
 html(lang="en")
   head
@@ -5,6 +7,15 @@ html(lang="en")
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
     title Заголовок
     link(rel="stylesheet" href="css/index.css")
+    script(defer src="js/index.bundle.js")
   body.page
-    .container
-      h1 Hello
+    include ../components/header/header
+
+    main.page__main
+      include ../components/hero/hero
+      include ../components/how-work/how-work
+      include ../components/menu/menu
+      include ../components/say/say
+      include ../components/sections/section-banner
+
+    include ../components/footer/footer

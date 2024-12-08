@@ -1,0 +1,15 @@
+.gallery {
+  display: inline-grid;
+  grid-template-columns: 208px 208px;
+  grid-template-rows: 187px 208px;
+  overflow: hidden;
+  border-radius: 10px;
+  gap: 15px;
+
+  &__image {
+    &--big {
+      grid-column: 1 / -1;
+      grid-row: 1 / 2;
+    }
+  }
+}

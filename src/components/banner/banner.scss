@@ -1,0 +1,37 @@
+.banner {
+  overflow: hidden;
+  border-radius: 10px;
+  min-height: 332px;
+  background-image: url('../images/backgrounds/banner-bg.jpg');
+  background-image: image-set(
+    url('../images/backgrounds/banner-bg.avif') type('image/avif') 1x,
+    url('../images/backgrounds/banner-bg@2x.avif') type('image/avif') 2x,
+    url('../images/backgrounds/banner-bg.webp') type('image/webp') 1x,
+    url('../images/backgrounds/banner-bg@2x.webp') type('image/webp') 2x,
+    url('../images/backgrounds/banner-bg.jpg') 1x,
+    url('../images/backgrounds/banner-bg@2x.jpg') 2x
+  );
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba($color: #000, $alpha: 0.7);
+  }
+
+  &__content {
+    max-width: 542px;
+    text-align: center;
+    padding-block: 92px;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 32px;
+    color: var(--color-light);
+  }
+}

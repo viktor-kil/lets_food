@@ -1,0 +1,36 @@
+.footer {
+  background-color: var(--bgc-secondary);
+
+  &__top {
+    display: flex;
+    column-gap: 76px;
+    align-items: start;
+    padding-block: 84px 90px;
+  }
+
+  &__info {
+    max-width: 324px;
+  }
+
+  &__logo {
+    margin-bottom: 24px;
+  }
+
+  &__address {
+    margin-bottom: 32px;
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--tc-secondary);
+  }
+
+  &__bottom {
+    border-top: 1px solid rgba(29, 29, 29, 0.5);
+    text-align: center;
+    padding-block: 45px 46px;
+  }
+
+  &__copy {
+    font-weight: 400;
+    font-size: 16px;
+  }
+}

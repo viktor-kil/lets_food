@@ -1,0 +1,17 @@
+.say {
+  padding-block: 20px 40px;
+
+  &__container {
+    display: flex;
+    column-gap: 100px;
+    align-items: center;
+  }
+
+  &__gallery {
+    padding-left: 70px;
+  }
+
+  &__head {
+    margin-bottom: 32px;
+  }
+}

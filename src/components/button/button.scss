@@ -1,0 +1,21 @@
+.button {
+  display: inline-flex;
+  column-gap: 16px;
+  align-items: center;
+  border: none;
+  border-radius: 50px;
+  padding: 8px 22px;
+  font-weight: 700;
+  font-size: 14px;
+  text-decoration: none;
+  color: var(--tc-primary);
+  background-color: #ddd;
+
+  &__icon {
+    fill: currentcolor;
+  }
+
+  &--primary {
+    background-color: var(--color-accent);
+  }
+}
